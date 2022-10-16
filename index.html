@@ -86,50 +86,6 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 
-    <!-- <script>
-        add = document.getElementById("add");
-        add.addEventListener("click", ()=>{
-            console.log("updating it");
-            tit = document.getElementById('title').value;
-            desc= document.getElementById('Description').value;
-
-            if(localStorage.getItem('itemjson')==null)
-            {
-                itemJsonArray= [];
-                itemJsonArray.push([tit,desc]);
-                localStorage.setItem('itemsJson',JSON.stringify(itemJsonArray))
-            }
-
-            else{
-                itemJsonArraystr = localStorage.getItem('itemsjson')
-                itemJsonArray = JSON.parse(itemJsonArraystr);
-                itemJsonArray.push([tit,desc]);
-                localStorage.setItem('itemjson', JSON,stringify(itemJsonArray))
-            }
-
-
-           let tablebody= document.getElementById('tablebody');
-           let str= "";
-           itemJsonArray.forEach((element, index) => {
-
-            str = str ; `
-            <tr>
-                <th scope="row">${index + 1}</th>
-                <td>${element[0]}</td>
-                <td>${element[1]}</td>
-           
-                <td><button class=" btn btn-outline-primary">Delete</button></td>
-             
-              </tr> `;
-               
-           });
-
-           tablebody.innerHTML = str;
-
-        
-        });
-
-    </script> -->
 
     <script>
         function getAndUpdate(){
